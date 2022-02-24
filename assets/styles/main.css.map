@@ -2,7 +2,18 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/main.scss"
+        "../scss/main.scss",
+        "../scss/_variables.scss",
+        "../scss/_general.scss",
+        "../scss/sections/_header.scss",
+        "../scss/sections/_carousel-section.scss",
+        "../scss/sections/_services-section.scss",
+        "../scss/sections/_projects-section.scss",
+        "../scss/sections/_about-section.scss",
+        "../scss/sections/_testimonials-section.scss",
+        "../scss/sections/_news-section.scss",
+        "../scss/sections/_clients-section.scss",
+        "../scss/sections/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
