@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import "variables";
+
+@import "header";
+@import "carousel-section";
+@import "services-section";
+@import "projects-section";
+@import "about-section";
+@import "testimonials-section";
+@import "news-section";
+@import "clients-section";
+@import "footer";
+
+/* No CSS */ /*# sourceMappingURL=main.css.map */
