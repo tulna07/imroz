@@ -8,4 +8,12 @@ html {
 
 body {
   font: 1.8rem $primary-font;
+  line-height: 1.67;
+}
+
+a {
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
 }

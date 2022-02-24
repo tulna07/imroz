@@ -1,0 +1,68 @@
+/** 
+  * Services Section 
+  * ============================
+  */
+.services {
+  .card {
+    background: #f6f6f6;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+
+    transition: transform 0.7s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &-body {
+      padding: 4rem 3rem;
+    }
+
+    &-icon {
+      margin-bottom: 1.9rem;
+
+      stroke-width: 1;
+      width: 47px;
+      height: 47px;
+
+      &--1 {
+        color: $primary-color;
+      }
+
+      &--2 {
+        color: #337dff;
+      }
+
+      &--3 {
+        color: #12d8df;
+      }
+
+      &--4 {
+        color: #59c98d;
+      }
+
+      &--5 {
+        color: #6f41f6;
+      }
+
+      &--6 {
+        color: #357ff6;
+      }
+    }
+
+    &-title {
+      margin-bottom: 1.9rem;
+
+      font: {
+        size: 2rem;
+        weight: 600;
+      }
+      color: #1f1f25;
+    }
+
+    &-text {
+      color: #1d1d24bf;
+    }
+  }
+}

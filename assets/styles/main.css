@@ -8,5 +8,76 @@ html {
 
 body {
   font: 1.8rem "Poppins", sans-serif;
+  line-height: 1.67;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+/** 
+  * Services Section 
+  * ============================
+  */
+.services .card {
+  background: #f6f6f6;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.services .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.services .card-body {
+  padding: 4rem 3rem;
+}
+
+.services .card-icon {
+  margin-bottom: 1.9rem;
+  stroke-width: 1;
+  width: 47px;
+  height: 47px;
+}
+
+.services .card-icon--1 {
+  color: #fd4766;
+}
+
+.services .card-icon--2 {
+  color: #337dff;
+}
+
+.services .card-icon--3 {
+  color: #12d8df;
+}
+
+.services .card-icon--4 {
+  color: #59c98d;
+}
+
+.services .card-icon--5 {
+  color: #6f41f6;
+}
+
+.services .card-icon--6 {
+  color: #357ff6;
+}
+
+.services .card-title {
+  margin-bottom: 1.9rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f1f25;
+}
+
+.services .card-text {
+  color: #1d1d24bf;
 }
 /*# sourceMappingURL=main.css.map */
