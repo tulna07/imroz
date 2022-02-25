@@ -9,6 +9,20 @@ html {
 body {
   font: 1.8rem $primary-font;
   line-height: 1.67;
+
+  // Scrollbar custom
+  &::-webkit-scrollbar {
+    width: 1rem;
+
+    &-thumb {
+      border-radius: 0.8rem;
+      background-color: #1c99fe;
+
+      &:hover {
+        background-color: #0084c2;
+      }
+    }
+  }
 }
 
 a {
@@ -16,6 +30,10 @@ a {
   &:active {
     text-decoration: none;
   }
+}
+
+p {
+  margin: 0;
 }
 
 @media (min-width: 1200px) {
@@ -62,8 +80,42 @@ a {
   }
 
   .text-heading {
-    font-size: 1.8rem;
+    font: {
+      size: 1.8rem;
+      weight: 300;
+    }
     line-height: 3rem;
-    color: #1d1d24bf;
+    color: #717173;
+  }
+}
+
+// Custom button
+.btn {
+  &-custom {
+    padding: 1.6rem 4rem;
+    background-color: transparent;
+
+    font: {
+      size: 1.6rem;
+      weight: 500;
+    }
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2rem;
+
+    border: 0.2rem solid #867c76;
+    border-radius: 99.9rem;
+
+    &--primary {
+      background-color: $primary-color;
+      border: 0.2rem solid $primary-color;
+
+      transition: all 0.7s;
+
+      &:hover {
+        background-color: transparent;
+        color: $primary-color;
+      }
+    }
   }
 }

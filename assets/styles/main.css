@@ -22,8 +22,25 @@ body {
   line-height: 1.67;
 }
 
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.8rem;
+  background-color: #1c99fe;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0084c2;
+}
+
 a:hover, a:active {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 @media (min-width: 1200px) {
@@ -62,8 +79,33 @@ a:hover, a:active {
 
 .section-headings .text-heading {
   font-size: 1.8rem;
+  font-weight: 300;
   line-height: 3rem;
-  color: #1d1d24bf;
+  color: #717173;
+}
+
+.btn-custom {
+  padding: 1.6rem 4rem;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border: 0.2rem solid #867c76;
+  border-radius: 99.9rem;
+}
+
+.btn-custom--primary {
+  background-color: #fd4766;
+  border: 0.2rem solid #fd4766;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.btn-custom--primary:hover {
+  background-color: transparent;
+  color: #fd4766;
 }
 
 /** 
@@ -130,5 +172,124 @@ a:hover, a:active {
 
 .services .card-text {
   color: #1d1d24bf;
+}
+
+/** 
+  * Projects Section 
+  * ============================
+  */
+.projects {
+  background: url("../images/bg-image-3.jpg") center/cover no-repeat;
+}
+
+.projects-item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.projects-item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f00), to(#0f0f0fbf));
+  background: linear-gradient(#0f0f0f00, #0f0f0fbf 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projects-item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), to(#fd4766));
+  background: linear-gradient(transparent 15%, #fd4766);
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.projects-item .projects__img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.projects-item .projects-text {
+  padding: 0 3rem;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.projects-item .projects-text .projects__sub-title {
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #ffffffb3;
+  letter-spacing: 0.05rem;
+}
+
+.projects-item .projects-text .projects__title {
+  margin-bottom: 1.8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.projects-item .projects-text .projects__description {
+  color: #ffffffb3;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.projects-item:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 0 2.5rem 5.5rem rgba(253, 71, 102, 0.22);
+          box-shadow: 0 2.5rem 5.5rem rgba(253, 71, 102, 0.22);
+}
+
+.projects-item:hover::after {
+  opacity: 1;
+}
+
+.projects-item:hover .projects__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects-item:hover .projects-text {
+  -webkit-transform: translate(-50%, -60px);
+          transform: translate(-50%, -60px);
+  z-index: 1;
+}
+
+.projects-item:hover .projects__description {
+  opacity: 1;
+}
+
+.projects .btn {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
