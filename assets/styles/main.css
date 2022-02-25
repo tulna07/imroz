@@ -292,4 +292,27 @@ p {
 .projects .btn {
   margin-top: 2rem;
 }
+
+/** 
+  * General 
+  * ============================
+  */
+.clients {
+  background-color: #f9f9f9;
+}
+
+.clients .text-heading {
+  font-weight: 400;
+  color: #1d1d24bf;
+}
+
+.clients__link {
+  display: inline-block;
+}
+
+.clients__link .clients__img {
+  display: block;
+  width: 60%;
+  opacity: 0.8;
+}
 /*# sourceMappingURL=main.css.map */
