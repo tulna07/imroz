@@ -3,11 +3,14 @@
   * ============================
   */
 .services {
+  .row:first-child {
+    margin-bottom: 3rem;
+  }
+
   .card {
     background: #f6f6f6;
     border: none;
     border-radius: 1rem;
-    margin-bottom: 3rem;
 
     transition: transform 0.7s;
 
