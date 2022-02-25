@@ -21,3 +21,43 @@ a {
 .padding-section {
   padding: 12rem 0;
 }
+
+.section-headings {
+  margin-bottom: 6rem;
+
+  .subheading {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+
+    font: {
+      size: 1.6rem;
+      weight: 600;
+    }
+    letter-spacing: 0.05rem;
+    line-height: 1.8rem;
+
+    background: linear-gradient(
+      to right,
+      #1c99fe 0%,
+      #7644ff 50%,
+      #fd4766 100%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .secondary-heading {
+    margin-bottom: 2rem;
+    font: {
+      size: 5rem;
+      weight: 600;
+    }
+    line-height: 6.2rem;
+  }
+
+  .text-heading {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #1d1d24bf;
+  }
+}
