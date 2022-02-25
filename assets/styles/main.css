@@ -1,4 +1,15 @@
 /** 
+  * Reset
+  * ============================
+  */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** 
   * General 
   * ============================
   */
@@ -15,15 +26,55 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+.section-padding {
+  padding: 12rem 0;
+}
+
+.section-headings {
+  margin-bottom: 6rem;
+}
+
+.section-headings .subheading {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#1c99fe), color-stop(50%, #7644ff), to(#fd4766));
+  background: linear-gradient(to right, #1c99fe 0%, #7644ff 50%, #fd4766 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-headings .secondary-heading {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+}
+
+.section-headings .text-heading {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #1d1d24bf;
+}
+
 /** 
   * Services Section 
   * ============================
   */
 .services .card {
+  margin-bottom: 3rem;
   background: #f6f6f6;
   border: none;
   border-radius: 1rem;
-  margin-bottom: 3rem;
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
@@ -40,7 +91,7 @@ a:hover, a:active {
 }
 
 .services .card-icon {
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.3rem;
   stroke-width: 1;
   width: 47px;
   height: 47px;
