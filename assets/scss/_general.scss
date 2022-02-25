@@ -18,7 +18,13 @@ a {
   }
 }
 
-.padding-section {
+@media (min-width: 120rem) {
+  .container {
+    max-width: 126rem;
+  }
+}
+
+.section-padding {
   padding: 12rem 0;
 }
 
