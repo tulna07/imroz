@@ -292,4 +292,53 @@ p {
 .projects .btn {
   margin-top: 2rem;
 }
+
+/** 
+  * General 
+  * ============================
+  */
+.clients {
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.clients .text-heading {
+  font-weight: 400;
+  color: #1d1d24bf;
+}
+
+.clients .row {
+  padding: 0 1.5rem;
+}
+
+.clients .col-4 {
+  padding: 0;
+}
+
+.clients__link {
+  height: 21.4rem;
+  border: 0.1rem solid #0000000d;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.clients__link .clients__img {
+  max-width: 15rem;
+  max-height: 11rem;
+  opacity: 0.8;
+}
+
+.clients__link:hover {
+  background-color: #fd4766;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #fd4766;
+  z-index: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.clients__link:hover .clients__img {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
