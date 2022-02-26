@@ -1,0 +1,30 @@
+/** 
+  * Media Queries 
+  * ============================
+  */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer {
+    &-header {
+      gap: 5rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    &-header {
+      gap: 0;
+      align-items: center;
+
+      > div:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
