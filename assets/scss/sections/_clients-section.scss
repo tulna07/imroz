@@ -4,6 +4,7 @@
   */
 .clients {
   background-color: #f9f9f9;
+  overflow: hidden;
 
   .text-heading {
     font-weight: 400;
@@ -12,13 +13,37 @@
 
   $this: &;
 
+  .row {
+    padding: 0 1.5rem;
+  }
+
+  .col-4 {
+    padding: 0;
+  }
+
   &__link {
-    display: inline-block;
+    height: 21.4rem;
+    border: 0.1rem solid #0000000d;
+    position: relative;
+
+    transition: all 0.5s;
 
     #{$this}__img {
-      display: block;
-      width: 60%;
+      max-width: 15rem;
+      max-height: 11rem;
       opacity: 0.8;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      border-radius: 0.6rem;
+      border: 0.1rem solid $primary-color;
+      z-index: 1;
+      transform: scale(1.1);
+
+      #{$this}__img {
+        opacity: 1;
+      }
     }
   }
 }
