@@ -25,6 +25,11 @@ body {
   }
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+}
+
 a {
   &:hover,
   &:active {
@@ -34,12 +39,6 @@ a {
 
 p {
   margin: 0;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1260px;
-  }
 }
 
 .section-padding {
@@ -60,12 +59,7 @@ p {
     letter-spacing: 0.05rem;
     line-height: 1.8rem;
 
-    background: linear-gradient(
-      to right,
-      #1c99fe 0%,
-      #7644ff 50%,
-      #fd4766 100%
-    );
+    background: $primary-gradient;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -103,8 +97,16 @@ p {
     color: #fff;
     letter-spacing: 0.2rem;
 
-    border: 0.2rem solid #867c76;
+    border: 0.2rem solid hsla(0, 0%, 100%, 0.2);
     border-radius: 99.9rem;
+
+    transition: all 0.7s;
+
+    &:hover {
+      background-color: $primary-color;
+      border: 0.2rem solid $primary-color;
+      color: #fff;
+    }
 
     &--primary {
       background-color: $primary-color;

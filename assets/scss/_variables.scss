@@ -4,3 +4,9 @@ $primary-heaing-font: "Montserrat", sans-serif;
 $primary-color: #fd4766;
 
 $card-hover-gradient: linear-gradient(transparent 15%, $primary-color);
+$primary-gradient: linear-gradient(
+  to right,
+  #1c99fe 0%,
+  #7644ff 50%,
+  #fd4766 100%
+);

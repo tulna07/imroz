@@ -1,0 +1,124 @@
+/** 
+  * Footer
+  * ============================
+  */
+.footer {
+  background-color: #010001;
+
+  $this: &;
+
+  &-header {
+    margin: 0;
+    padding: 7rem 0;
+
+    border-bottom: 0.15rem solid hsla(0, 0%, 100%, 0.2);
+
+    > div {
+      padding: 0;
+    }
+
+    #{$this}__title {
+      font: {
+        size: 3.6rem;
+        weight: 700;
+      }
+      line-height: 1.4;
+      color: #fff;
+    }
+  }
+
+  .btn-custom {
+    padding: 2.6rem 6rem;
+  }
+
+  &-body {
+    padding: 7rem 0;
+    color: #757575;
+  }
+
+  &-logo-link {
+    display: inline-block;
+
+    #{$this}-logo {
+      max-height: 6rem;
+    }
+
+    + p {
+      font-size: 1.6rem;
+      color: #757575;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &-subheader {
+    margin-bottom: 3rem;
+    font: {
+      size: 2rem;
+      weight: 500;
+    }
+    color: #fff;
+
+    + ul {
+      gap: 0.5rem;
+
+      li {
+        font-size: 1.6rem;
+        color: #757575;
+      }
+
+      #{$this}-link {
+        display: inline-block;
+        padding: 0.5rem 0;
+        color: #757575;
+        font-size: 1.6rem;
+
+        position: relative;
+
+        transition: color 0.5s;
+
+        &::after {
+          content: "";
+          height: 0.1rem;
+          width: 0;
+          background: $primary-gradient;
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          transition: width 0.5s;
+        }
+
+        &:hover {
+          color: $primary-color;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &-media {
+    margin-top: 2rem;
+
+    &.d-flex {
+      gap: 3rem;
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 1.6rem;
+      color: #c6c9d8bf;
+
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+        transform: translateY(-0.3rem);
+      }
+    }
+  }
+}
