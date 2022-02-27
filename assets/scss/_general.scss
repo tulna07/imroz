@@ -9,6 +9,7 @@ html {
 body {
   font: 1.8rem $primary-font;
   line-height: 1.67;
+  overflow-x: hidden;
 
   // Scrollbar custom
   &::-webkit-scrollbar {
@@ -86,6 +87,7 @@ p {
 // Custom button
 .btn {
   &-custom {
+    display: inline-block;
     padding: 1.6rem 4rem;
     background-color: transparent;
 
