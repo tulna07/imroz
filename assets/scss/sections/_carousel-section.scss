@@ -1,0 +1,153 @@
+/** 
+  * Carousel Section
+  * ============================
+  */
+.carousel {
+  position: relative;
+  z-index: 0;
+  $carousel: &;
+
+  &-item {
+    height: 120vh;
+
+    &.active {
+      h1 {
+        opacity: 1;
+        transform: translateY(-2rem);
+      }
+
+      p {
+        opacity: 1;
+        transform: translateY(-2rem);
+      }
+
+      a {
+        opacity: 1;
+        transform: translateY(-2rem);
+      }
+    }
+
+    &--1 {
+      background: url("../images/bg-image-22.jpg") center / cover;
+    }
+
+    &--2 {
+      background: url("../images/bg-image-23.jpg") center / cover;
+    }
+
+    &--3 {
+      background: url("../images/bg-image-24.jpg") center / cover;
+    }
+
+    &--4 {
+      background: url("../images/bg-image-20.jpg") center / cover;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font: {
+        size: 100px;
+        weight: 900;
+        family: "Montserrat", sans-serif;
+      }
+      color: #ffffff;
+
+      transform: translateY(2rem);
+      opacity: 0;
+      transition: all 0.7s;
+    }
+
+    p {
+      margin-bottom: 5rem;
+      font : {
+        size: 2.4rem;
+        weight: 300;
+      }
+      line-height: 4rem;
+
+      transform: translateY(2rem);
+      opacity: 0;
+      transition: all 0.9s;
+    }
+
+    a {
+      transform: translateY(2rem);
+      opacity: 0;
+      transition: all 1.1s;
+    }
+  }
+
+  &-caption {
+    top: 52%;
+    transform: translateY(-50%);
+
+    // Fix wtf bug
+    // anchor element self
+    // generated ? :D
+    + a {
+      display: none;
+    }
+  }
+
+  &-indicators {
+    gap: 1.5rem;
+    bottom: 5rem;
+    li {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      border: 0.2rem solid transparent;
+
+      &.active {
+        background-color: transparent;
+        border: 0.2rem solid $primary-color;
+      }
+    }
+  }
+
+  // Fix wtf bug
+  // anchor element self
+  // generated ? :D
+  &-inner + a {
+    display: none;
+  }
+
+  button {
+    background-color: transparent;
+    width: 7rem;
+    height: 7rem;
+    outline: none;
+
+    border: 0.2rem solid hsla(0, 0%, 100%, 0.2);
+    border-radius: 50%;
+
+    position: relative;
+
+    transition: all 0.5s;
+
+    #{$carousel}-control-prev-icon,
+    #{$carousel}-control-next-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      border: 0.2rem solid $primary-color;
+    }
+  }
+
+  &-control-prev {
+    button:hover {
+      transform: translateX(-2rem);
+    }
+  }
+
+  &-control-next {
+    button:hover {
+      transform: translateX(2rem);
+    }
+  }
+}

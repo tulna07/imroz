@@ -3,7 +3,10 @@
   * ============================
   */
 .header {
-  background-color: yellowgreen;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+
   &-logo {
     max-height: 6rem;
   }
@@ -34,10 +37,6 @@
         .nav-link {
           color: $primary-color !important;
         }
-      }
-
-      &:last-child {
-        margin-left: 2rem;
       }
     }
 
@@ -93,5 +92,19 @@
     &-toggle::after {
       display: none;
     }
+  }
+
+  .btn-custom {
+    margin-left: 3rem;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: #fff;
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    width: 3rem;
+    height: 3rem;
   }
 }

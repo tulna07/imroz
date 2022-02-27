@@ -103,6 +103,7 @@ p {
   background-color: #fd4766;
   border: 0.2rem solid #fd4766;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-custom--primary {
@@ -150,7 +151,9 @@ p {
   * ============================
   */
 .header {
-  background-color: yellowgreen;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
 }
 
 .header-logo {
@@ -185,10 +188,6 @@ p {
 
 .header .nav-item:hover .nav-link {
   color: #fd4766 !important;
-}
-
-.header .nav-item:last-child {
-  margin-left: 2rem;
 }
 
 .header .nav-link {
@@ -236,6 +235,167 @@ p {
 
 .header .dropdown-toggle::after {
   display: none;
+}
+
+.header .btn-custom {
+  margin-left: 3rem;
+}
+
+.header .navbar-light .navbar-toggler {
+  color: #fff;
+  border: none;
+}
+
+.header .navbar-toggler-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+/** 
+  * Carousel Section
+  * ============================
+  */
+.carousel {
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-item {
+  height: 120vh;
+}
+
+.carousel-item.active h1 {
+  opacity: 1;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.carousel-item.active p {
+  opacity: 1;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.carousel-item.active a {
+  opacity: 1;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.carousel-item--1 {
+  background: url("../images/bg-image-22.jpg") center/cover;
+}
+
+.carousel-item--2 {
+  background: url("../images/bg-image-23.jpg") center/cover;
+}
+
+.carousel-item--3 {
+  background: url("../images/bg-image-24.jpg") center/cover;
+}
+
+.carousel-item--4 {
+  background: url("../images/bg-image-20.jpg") center/cover;
+}
+
+.carousel-item h1 {
+  margin-bottom: 1rem;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.carousel-item p {
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.carousel-item a {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+  -webkit-transition: all 1.1s;
+  transition: all 1.1s;
+}
+
+.carousel-caption {
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-caption + a {
+  display: none;
+}
+
+.carousel-indicators {
+  gap: 1.5rem;
+  bottom: 5rem;
+}
+
+.carousel-indicators li {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+}
+
+.carousel-indicators li.active {
+  background-color: transparent;
+  border: 0.2rem solid #fd4766;
+}
+
+.carousel-inner + a {
+  display: none;
+}
+
+.carousel button {
+  background-color: transparent;
+  width: 7rem;
+  height: 7rem;
+  outline: none;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.carousel button .carousel-control-prev-icon,
+.carousel button .carousel-control-next-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel button:hover {
+  background-color: #fd4766;
+  border: 0.2rem solid #fd4766;
+}
+
+.carousel-control-prev button:hover {
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+}
+
+.carousel-control-next button:hover {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
 }
 
 /** 
