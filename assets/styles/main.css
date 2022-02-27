@@ -583,6 +583,81 @@ p {
   margin-top: 2rem;
 }
 
+/** 
+  * About Section
+  * ============================
+  */
+.about .secondary-heading {
+  margin-bottom: 4rem;
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.about-info {
+  padding-left: 3.5rem;
+}
+
+.about .nav-pills {
+  margin-bottom: 2rem;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 99rem;
+}
+
+.about .nav-link {
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1d1d24bf;
+  background-color: transparent;
+  border-radius: 99rem;
+}
+
+.about .nav-link.active {
+  color: #fff;
+  background-color: #fd4766;
+}
+
+.about .tab-pane {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #717173;
+  line-height: 3rem;
+}
+
+.about .tab-pane h4 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.about #history ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about #history ul li {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #7e7e7e;
+}
+
+.about #history ul li i {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #fd4766;
+}
+
 .testimonials {
   background-color: #f9f9f9;
 }
