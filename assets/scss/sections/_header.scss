@@ -1,0 +1,97 @@
+/** 
+  * Header
+  * ============================
+  */
+.header {
+  background-color: yellowgreen;
+  &-logo {
+    max-height: 6rem;
+  }
+
+  .nav {
+    &bar {
+      padding: 3rem 2.5rem;
+
+      &-collapse {
+        justify-content: flex-end;
+      }
+
+      &-nav {
+        justify-content: center;
+        gap: 2rem;
+      }
+    }
+
+    &-item {
+      display: inline-block;
+
+      &:hover {
+        .dropdown-menu {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .nav-link {
+          color: $primary-color !important;
+        }
+      }
+
+      &:last-child {
+        margin-left: 2rem;
+      }
+    }
+
+    &-link {
+      padding: 2rem 0;
+      font: {
+        size: 1.6rem;
+        weight: 500;
+      }
+      color: #fff !important;
+
+      transition: color 0.5s;
+    }
+  }
+
+  .dropdown {
+    &-menu {
+      display: block;
+      padding: 1.2rem 1rem;
+      min-width: 24rem;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      background-color: #fff;
+      box-shadow: 0 0 3.5rem rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 0.4rem;
+
+      transition: all 0.7s;
+    }
+
+    &-item {
+      display: block;
+      padding: 0.5rem 2rem;
+      border-radius: 0.3rem;
+
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #1f1f25;
+
+      transition: all 0.7s;
+
+      &:hover {
+        color: $primary-color;
+        background: rgba(249, 0, 77, 0.07);
+      }
+    }
+
+    &-toggle::after {
+      display: none;
+    }
+  }
+}
