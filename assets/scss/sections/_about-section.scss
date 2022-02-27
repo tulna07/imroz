@@ -1,0 +1,81 @@
+/** 
+  * About Section
+  * ============================
+  */
+.about {
+  .secondary-heading {
+    margin-bottom: 4rem;
+  }
+
+  &-img {
+    display: block;
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+
+  &-info {
+    padding-left: 3.5rem;
+  }
+
+  .nav {
+    &-pills {
+      margin-bottom: 2rem;
+      border: 0.1rem solid #e6e6e6;
+      border-radius: 99rem;
+    }
+    &-link {
+      padding: 1.5rem 4rem;
+
+      font: {
+        size: 1.6rem;
+        weight: 600;
+      }
+      color: #1d1d24bf;
+      background-color: transparent;
+      border-radius: 99rem;
+
+      &.active {
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  .tab-pane {
+    font: {
+      size: 1.8rem;
+      weight: 300;
+    }
+    color: #717173;
+    line-height: 3rem;
+
+    h4 {
+      margin-bottom: 2rem;
+      font: {
+        size: 2.4rem;
+        weight: 600;
+      }
+      color: #000;
+    }
+  }
+
+  #history ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li {
+      font: {
+        size: 1.6rem;
+        weight: 300;
+      }
+      color: #7e7e7e;
+
+      i {
+        margin-right: 1rem;
+        font-size: 2rem;
+        color: $primary-color;
+      }
+    }
+  }
+}
