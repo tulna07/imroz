@@ -3,8 +3,12 @@
   * ============================
   */
 .about {
-  .secondary-heading {
-    margin-bottom: 4rem;
+  .section-headings {
+    margin-bottom: 2.7rem;
+
+    .secondary-heading {
+      margin-bottom: 4rem;
+    }
   }
 
   &-img {
@@ -24,7 +28,7 @@
       border-radius: 99rem;
     }
     &-link {
-      padding: 1.5rem 4rem;
+      padding: 1.2rem 3.5rem;
 
       font: {
         size: 1.6rem;
@@ -56,6 +60,10 @@
         weight: 600;
       }
       color: #000;
+    }
+
+    p:first-child {
+      margin-bottom: 3.5rem;
     }
   }
 
