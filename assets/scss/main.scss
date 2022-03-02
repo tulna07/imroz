@@ -1,7 +1,6 @@
 @import "reset";
 @import "variables";
 @import "general";
-@import "media-queries";
 
 @import "sections/header";
 @import "sections/carousel-section";
@@ -12,3 +11,5 @@
 @import "sections/news-section";
 @import "sections/clients-section";
 @import "sections/footer";
+
+@import "media-queries";

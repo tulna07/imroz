@@ -2,21 +2,32 @@
   * Media Queries 
   * ============================
   */
-@media (min-width: 1200px) {
+
+// 1200px;
+@media (min-width: $bp-xl) {
   .container {
     max-width: 1260px;
   }
 }
 
-@media (min-width: 576px) {
-  .footer {
-    &-header {
-      gap: 5rem;
-    }
-  }
+@media (max-width: $bp-xl) {
+  // .container {
+  //   max-width: 1260px;
+  // }
 }
 
-@media (min-width: 992px) {
+// 992px
+@media (max-width: $bp-lg) {
+  .section-padding {
+    padding: 8rem 0;
+  }
+
+  .section-headings {
+    .secondary-heading {
+      font-size: 4rem;
+    }
+  }
+
   .footer {
     &-header {
       gap: 0;
@@ -25,6 +36,47 @@
       > div:last-child {
         text-align: right;
       }
+    }
+  }
+}
+
+// 768px
+@media (max-width: $bp-md) {
+  .section-headings {
+    .secondary-heading {
+      font-size: 3.2rem;
+      line-height: 4.3rem;
+    }
+
+    .text-heading {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .clients {
+    $clients: &;
+
+    &__link {
+      border: transparent;
+
+      #{$clients}__img {
+        max-width: 10rem;
+        max-height: 11rem;
+      }
+    }
+  }
+}
+
+// 576px
+@media (max-width: $bp-sm) {
+  .footer {
+    &-header {
+      gap: 5rem;
     }
   }
 }

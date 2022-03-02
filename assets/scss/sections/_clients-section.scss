@@ -6,12 +6,12 @@
   background-color: #f9f9f9;
   overflow: hidden;
 
+  $clients: &;
+
   .text-heading {
     font-weight: 400;
     color: #1d1d24bf;
   }
-
-  $this: &;
 
   .row {
     padding: 0 1.5rem;
@@ -23,12 +23,13 @@
 
   &__link {
     height: 21.4rem;
+
     border: 0.1rem solid #0000000d;
     position: relative;
 
     transition: all 0.5s;
 
-    #{$this}__img {
+    #{$clients}__img {
       max-width: 15rem;
       max-height: 11rem;
       opacity: 0.8;
@@ -41,7 +42,7 @@
       z-index: 1;
       transform: scale(1.1);
 
-      #{$this}__img {
+      #{$clients}__img {
         opacity: 1;
       }
     }
