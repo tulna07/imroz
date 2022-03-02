@@ -36,6 +36,16 @@
       }
     }
   }
+
+  .footer {
+    $this: &;
+
+    &-body {
+      div:first-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
 // from 992px to 1199px;
@@ -115,12 +125,29 @@
   }
 
   .footer {
+    $this: &;
+
     &-header {
       gap: 0;
       align-items: center;
 
       > div:last-child {
-        text-align: right;
+        text-align: left !important;
+      }
+
+      #{$this}__title {
+        margin-bottom: 2rem;
+        font-size: 2.6rem;
+      }
+
+      .btn-custom {
+        padding: 1.6rem 3.5rem;
+      }
+    }
+
+    &-body {
+      > div {
+        margin-bottom: 4rem !important;
       }
     }
   }

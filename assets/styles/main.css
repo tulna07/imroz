@@ -122,8 +122,8 @@ p {
 
 .progress-wrap {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 30px;
+  bottom: 30px;
   height: 46px;
   width: 46px;
   cursor: pointer;
@@ -1129,6 +1129,10 @@ p {
   color: #757575;
 }
 
+.footer-body div:first-child {
+  margin-right: 10rem;
+}
+
 .footer-logo-link {
   display: inline-block;
 }
@@ -1235,6 +1239,9 @@ p {
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
   }
+  .footer-body div:first-child {
+    margin: 0;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1289,7 +1296,17 @@ p {
             align-items: center;
   }
   .footer-header > div:last-child {
-    text-align: right;
+    text-align: left !important;
+  }
+  .footer-header .footer__title {
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+  }
+  .footer-header .btn-custom {
+    padding: 1.6rem 3.5rem;
+  }
+  .footer-body > div {
+    margin-bottom: 4rem !important;
   }
 }
 

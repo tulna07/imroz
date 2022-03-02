@@ -34,6 +34,10 @@
   &-body {
     padding: 7rem 0;
     color: #757575;
+
+    div:first-child {
+      margin-right: 10rem;
+    }
   }
 
   &-logo-link {
