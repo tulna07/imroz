@@ -3,7 +3,9 @@
   * ============================
   */
 .news {
-  $this: &;
+  padding-bottom: 8rem;
+
+  $news: &;
 
   &-item {
     display: block;
@@ -42,13 +44,13 @@
       transition: opacity 1s;
     }
 
-    #{$this}__img {
+    #{$news}__img {
       width: 100%;
 
       transition: transform 1s;
     }
 
-    #{$this}-text {
+    #{$news}-text {
       padding: 0 3rem;
       width: 100%;
 
@@ -60,8 +62,9 @@
 
       transition: transform 0.5s;
 
-      #{$this}__sub-title {
+      #{$news}__sub-title {
         margin-bottom: 1.6rem;
+
         font: {
           size: 1.6rem;
           weight: 300;
@@ -70,21 +73,15 @@
         letter-spacing: 0.05rem;
       }
 
-      #{$this}__title {
+      #{$news}__title {
         margin-bottom: 1.6rem;
+
         font: {
           size: 2.4rem;
           weight: 500;
         }
         line-height: 3.6rem;
         color: #fff;
-      }
-
-      #{$this}__description {
-        color: #ffffffb3;
-        opacity: 0;
-
-        transition: opacity 0.7s;
       }
     }
 
@@ -96,16 +93,12 @@
         opacity: 1;
       }
 
-      #{$this}__img {
+      #{$news}__img {
         transform: scale(1.1);
       }
 
-      #{$this}-text {
+      #{$news}-text {
         transform: translate(-50%, -6rem);
-      }
-
-      #{$this}__description {
-        opacity: 1;
       }
 
       .btn {

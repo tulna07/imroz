@@ -76,6 +76,7 @@ p {
   font-size: 5rem;
   font-weight: 600;
   line-height: 6.2rem;
+  color: #1f1f25;
 }
 
 .section-headings .text-heading {
@@ -816,6 +817,10 @@ p {
   * News Section 
   * ============================
   */
+.news {
+  padding-bottom: 8rem;
+}
+
 .news-item {
   display: block;
   overflow: hidden;
@@ -894,13 +899,6 @@ p {
   color: #fff;
 }
 
-.news-item .news-text .news__description {
-  color: #ffffffb3;
-  opacity: 0;
-  -webkit-transition: opacity 0.7s;
-  transition: opacity 0.7s;
-}
-
 .news-item:hover {
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
@@ -920,10 +918,6 @@ p {
 .news-item:hover .news-text {
   -webkit-transform: translate(-50%, -6rem);
           transform: translate(-50%, -6rem);
-}
-
-.news-item:hover .news__description {
-  opacity: 1;
 }
 
 .news-item:hover .btn {
@@ -1138,6 +1132,13 @@ p {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .news__title {
+    font-size: 2rem !important;
+    line-height: 2.8rem !important;
+  }
+}
+
 @media (max-width: 992px) {
   .section-padding {
     padding: 8rem 0;
@@ -1167,6 +1168,13 @@ p {
   }
   .section-headings .text-heading br {
     display: none;
+  }
+  .news.section-padding {
+    padding-top: 6rem;
+  }
+  .news__title {
+    font-size: 2.2rem !important;
+    line-height: 3.3rem !important;
   }
   .clients__link {
     border: transparent;

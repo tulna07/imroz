@@ -11,9 +11,17 @@
 }
 
 @media (max-width: $bp-xl) {
-  // .container {
-  //   max-width: 1260px;
-  // }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .news {
+    $news: &;
+
+    &__title {
+      font-size: 2rem !important;
+      line-height: 2.8rem !important;
+    }
+  }
 }
 
 // 992px
@@ -55,6 +63,19 @@
       br {
         display: none;
       }
+    }
+  }
+
+  .news {
+    $news: &;
+
+    &.section-padding {
+      padding-top: 6rem;
+    }
+
+    &__title {
+      font-size: 2.2rem !important;
+      line-height: 3.3rem !important;
     }
   }
 
