@@ -712,7 +712,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .about #history ul li {
@@ -1133,6 +1133,13 @@ p {
   }
 }
 
+@media (max-width: 1200px) {
+  .about .nav-link {
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .tab-pane .testimonials__description {
     font-size: 2.4rem;
@@ -1150,6 +1157,12 @@ p {
   }
   .section-headings .secondary-heading {
     font-size: 4rem;
+  }
+  .about-img {
+    margin-bottom: 4rem;
+  }
+  .about-info {
+    padding: 0 1.5rem;
   }
   .testimonials .tab-content {
     margin-bottom: 4rem;
@@ -1183,6 +1196,20 @@ p {
   }
   .section-headings .text-heading br {
     display: none;
+  }
+  .about .nav-pills {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .about .nav-link {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+  }
+  .about .tab-pane p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
   }
   .testimonials .tab-pane::before {
     left: 50%;

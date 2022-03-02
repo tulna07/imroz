@@ -18,6 +18,19 @@
   }
 }
 
+@media (max-width: $bp-xl) {
+  .about {
+    $this: &;
+
+    .nav {
+      &-link {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 // from 992px to 1199px;
 @media (min-width: 992px) and (max-width: 1199px) {
   .testimonials {
@@ -48,6 +61,16 @@
   .section-headings {
     .secondary-heading {
       font-size: 4rem;
+    }
+  }
+
+  .about {
+    &-img {
+      margin-bottom: 4rem;
+    }
+
+    &-info {
+      padding: 0 1.5rem;
     }
   }
 
@@ -98,6 +121,31 @@
       br {
         display: none;
       }
+    }
+  }
+
+  .about {
+    $this: &;
+
+    .nav {
+      &-pills {
+        border-radius: 0;
+        border: {
+          top: none;
+          left: none;
+          right: none;
+        }
+      }
+
+      &-link {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.4rem;
+      }
+    }
+
+    .tab-pane p {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
     }
   }
 
