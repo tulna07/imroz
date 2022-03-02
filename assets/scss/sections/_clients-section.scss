@@ -6,7 +6,7 @@
   background-color: #f9f9f9;
   overflow: hidden;
 
-  $clients: &;
+  $this: &;
 
   .text-heading {
     font-weight: 400;
@@ -29,7 +29,7 @@
 
     transition: all 0.5s;
 
-    #{$clients}__img {
+    #{$this}__img {
       max-width: 15rem;
       max-height: 11rem;
       opacity: 0.8;
@@ -42,7 +42,7 @@
       z-index: 1;
       transform: scale(1.1);
 
-      #{$clients}__img {
+      #{$this}__img {
         opacity: 1;
       }
     }

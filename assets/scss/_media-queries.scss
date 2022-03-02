@@ -8,14 +8,28 @@
   .container {
     max-width: 1260px;
   }
-}
 
-@media (max-width: $bp-xl) {
+  .testimonials {
+    $this: &;
+
+    .nav {
+      padding: 0 4rem;
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .testimonials {
+    $this: &;
+
+    .tab-pane &__description {
+      font-size: 2.4rem;
+      line-height: 4.4rem;
+    }
+  }
+
   .news {
-    $news: &;
+    $this: &;
 
     &__title {
       font-size: 2rem !important;
@@ -36,6 +50,14 @@
     }
   }
 
+  .testimonials {
+    $this: &;
+
+    .tab-content {
+      margin-bottom: 4rem;
+    }
+  }
+
   .footer {
     &-header {
       gap: 0;
@@ -44,6 +66,17 @@
       > div:last-child {
         text-align: right;
       }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .testimonials {
+    $this: &;
+
+    .tab-pane &__description {
+      font-size: 2.8rem;
+      line-height: 4.8rem;
     }
   }
 }
@@ -66,8 +99,35 @@
     }
   }
 
+  .testimonials {
+    $this: &;
+
+    .tab-pane {
+      &::before {
+        // width: 15rem;
+        // height: 50%;
+
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #{$this}__description {
+        font: {
+          size: 2rem;
+          weight: 400;
+        }
+        line-height: 3.7rem;
+      }
+    }
+
+    &-info {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+
   .news {
-    $news: &;
+    $this: &;
 
     &.section-padding {
       padding-top: 6rem;
@@ -80,12 +140,12 @@
   }
 
   .clients {
-    $clients: &;
+    $this: &;
 
     &__link {
       border: transparent;
 
-      #{$clients}__img {
+      #{$this}__img {
         max-width: 10rem;
         max-height: 11rem;
       }

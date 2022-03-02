@@ -5,7 +5,7 @@
 .news {
   padding-bottom: 8rem;
 
-  $news: &;
+  $this: &;
 
   &-item {
     display: block;
@@ -44,13 +44,13 @@
       transition: opacity 1s;
     }
 
-    #{$news}__img {
+    #{$this}__img {
       width: 100%;
 
       transition: transform 1s;
     }
 
-    #{$news}-text {
+    #{$this}-text {
       padding: 0 3rem;
       width: 100%;
 
@@ -62,7 +62,7 @@
 
       transition: transform 0.5s;
 
-      #{$news}__sub-title {
+      #{$this}__sub-title {
         margin-bottom: 1.6rem;
 
         font: {
@@ -73,7 +73,7 @@
         letter-spacing: 0.05rem;
       }
 
-      #{$news}__title {
+      #{$this}__title {
         margin-bottom: 1.6rem;
 
         font: {
@@ -93,11 +93,11 @@
         opacity: 1;
       }
 
-      #{$news}__img {
+      #{$this}__img {
         transform: scale(1.1);
       }
 
-      #{$news}-text {
+      #{$this}-text {
         transform: translate(-50%, -6rem);
       }
 

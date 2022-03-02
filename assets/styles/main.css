@@ -768,14 +768,15 @@ p {
   font-weight: 500;
 }
 
-.testimonials .nav {
-  padding: 0 3rem;
+.testimonials .nav-item {
+  margin-bottom: 3rem;
 }
 
 .testimonials .nav-link {
   padding: 0;
   overflow: hidden;
   border-radius: 0.6rem;
+  position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -783,6 +784,7 @@ p {
 .testimonials .nav-link.active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  background-color: transparent;
   -webkit-box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -791,26 +793,22 @@ p {
   background-color: transparent;
 }
 
-.testimonials .nav-link .testimonials__img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .testimonials .nav-link::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 1;
-  cursor: pointer;
 }
 
-.testimonials .nav-item {
-  margin-bottom: 3rem;
+.testimonials .nav-link .testimonials__img {
+  width: 100%;
+  max-height: 14rem;
+  min-height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /** 
@@ -1130,9 +1128,16 @@ p {
   .container {
     max-width: 1260px;
   }
+  .testimonials .nav {
+    padding: 0 4rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .tab-pane .testimonials__description {
+    font-size: 2.4rem;
+    line-height: 4.4rem;
+  }
   .news__title {
     font-size: 2rem !important;
     line-height: 2.8rem !important;
@@ -1146,6 +1151,9 @@ p {
   .section-headings .secondary-heading {
     font-size: 4rem;
   }
+  .testimonials .tab-content {
+    margin-bottom: 4rem;
+  }
   .footer-header {
     gap: 0;
     -webkit-box-align: center;
@@ -1154,6 +1162,13 @@ p {
   }
   .footer-header > div:last-child {
     text-align: right;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tab-pane .testimonials__description {
+    font-size: 2.8rem;
+    line-height: 4.8rem;
   }
 }
 
@@ -1168,6 +1183,20 @@ p {
   }
   .section-headings .text-heading br {
     display: none;
+  }
+  .testimonials .tab-pane::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .testimonials .tab-pane .testimonials__description {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+  }
+  .testimonials-info {
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   .news.section-padding {
     padding-top: 6rem;
