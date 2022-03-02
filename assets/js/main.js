@@ -1,3 +1,39 @@
+const mobileModal_navItem = document.getElementsByClassName(
+  "mobile-modal__nav-item"
+);
+
+for (let i = 0; i < mobileModal_navItem.length; ++i)
+  mobileModal_navItem[i].addEventListener("click", () => {
+    const mobileModal_subNav = mobileModal_navItem[i].childNodes[3],
+      mobileModal_subNav_link = mobileModal_navItem[i].childNodes[1];
+
+    const style = window.getComputedStyle(mobileModal_subNav);
+    if (
+      style.display === "none" ||
+      mobileModal_subNav.style.display === "none"
+    ) {
+      mobileModal_subNav.style.display = "block";
+      mobileModal_subNav_link.style.color = "#FD4766";
+    } else {
+      mobileModal_subNav.style.display = "none";
+      mobileModal_subNav_link.style.color = "#1f1f25";
+    }
+  });
+
+const mobileModal = document.querySelector(".mobile-modal"),
+  toggleBtn = document.querySelector(".btn-toggle"),
+  closeBtn = document.querySelector(".mobile-modal__close");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.style.borderColor = "#fff";
+  mobileModal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  toggleBtn.style.borderColor = "transparent";
+  mobileModal.style.display = "none";
+});
+
 // Back to top button with progress
 // Reference from: https://www.jqueryscript.net/other/back-top-scroll-indicator.html#google_vignette
 (function ($) {

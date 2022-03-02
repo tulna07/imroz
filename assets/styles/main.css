@@ -212,6 +212,7 @@ p {
   * ============================
   */
 .header {
+  padding: 0 2rem;
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -299,17 +300,109 @@ p {
 }
 
 .header .btn-custom {
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
-.header .navbar-light .navbar-toggler {
+.header .btn-toggle {
+  display: none;
+  padding: 0.8rem;
+  border: 0.2rem solid transparent;
   color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mobile-modal {
+  display: none;
+  padding: 2rem;
+  background-color: #fff;
+  width: 32rem;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 999;
+}
+
+.mobile-modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.mobile-modal__header .mobile-modal__logo-link {
+  display: inline-block;
+}
+
+.mobile-modal__header .mobile-modal__logo {
+  max-height: 5.6rem;
+}
+
+.mobile-modal__header .mobile-modal__close {
+  font-size: 2.5rem;
+}
+
+.mobile-modal__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-modal__nav-item {
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #e6e6e6;
+}
+
+.mobile-modal__nav-item:last-child {
   border: none;
 }
 
-.header .navbar-toggler-icon {
-  width: 3rem;
-  height: 3rem;
+.mobile-modal__nav-item > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1f1f25;
+}
+
+.mobile-modal__nav-item i {
+  font-size: 2rem;
+}
+
+.mobile-modal__subnav {
+  display: none;
+  padding: 1.2rem 0 0 3rem;
+}
+
+.mobile-modal__subnav-item {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-modal__subnav a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #1f1f25;
 }
 
 /** 
@@ -1134,6 +1227,10 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next {
+    display: none;
+  }
   .about .nav-link {
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
@@ -1145,9 +1242,20 @@ p {
     font-size: 2.4rem;
     line-height: 4.4rem;
   }
+  .header .btn-custom {
+    padding: 1rem 2.7rem;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
   .news__title {
     font-size: 2rem !important;
     line-height: 2.8rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-modal {
+    display: none !important;
   }
 }
 
@@ -1157,6 +1265,13 @@ p {
   }
   .section-headings .secondary-heading {
     font-size: 4rem;
+  }
+  .header .btn-custom {
+    margin-left: 0;
+    margin-right: 5rem;
+  }
+  .header .btn-toggle {
+    display: inline-block;
   }
   .about-img {
     margin-bottom: 4rem;
@@ -1179,6 +1294,13 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .carousel-item h1 {
+    font-size: 6rem;
+    margin-bottom: 1.8rem;
+  }
+  .carousel-item p br {
+    display: none;
+  }
   .tab-pane .testimonials__description {
     font-size: 2.8rem;
     line-height: 4.8rem;
@@ -1195,6 +1317,27 @@ p {
     line-height: 2.8rem;
   }
   .section-headings .text-heading br {
+    display: none;
+  }
+  .header .btn-custom {
+    margin-right: 4rem;
+    padding: 0.7rem 1.6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+  .carousel-item {
+    height: 80vh;
+  }
+  .carousel-item h1 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .carousel-item p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  .carousel-item p br {
     display: none;
   }
   .about .nav-pills {

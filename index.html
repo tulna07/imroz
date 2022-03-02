@@ -48,7 +48,6 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="header-logo-link" class="navbar-brand" href="#"
             ><img
@@ -56,17 +55,6 @@
               src="assets/images/logo.png"
               alt="Header logo"
           /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -186,9 +174,166 @@
             </ul>
           </div>
           <a href="#" class="btn-custom">Buy Now</a>
+          <i class="btn-toggle fa-solid fa-bars"></i>
         </nav>
-      </div>
     </header>
+
+    <!-- modal mobile -->
+    <div class="mobile-modal">
+      <div class="mobile-modal__header">
+        <a class="mobile-modal__logo-link" href="#"><img class="mobile-modal__logo" src="assets/images/logo-symbol-dark.png" alt="Mobile modal logo"></a>
+        <i class="mobile-modal__close fa-solid fa-xmark"></i>
+      </div>
+
+      <ul class="mobile-modal__nav text-capitalize">
+        <li class="mobile-modal__nav-item">
+          <a href="#">Home <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="mobile-modal__subnav" id="mobile-modal__subnav--1">
+            <li class="mobile-modal__subnav-item" aria-labelledby="navbarDropdown">
+              <a href="#">Main Demo</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Main Demo Dark</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Personal Portfolio</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Interior Landing</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Portfolio One Page 02</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Minimal Portfolio</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Digital Agency</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Creative Agency</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Corporate Business</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Portfolio One Page</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Creative Agency Landing</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Business</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Designer Portfolio</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Home Particles</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Studio Agency</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Startup</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Creative Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-modal__nav-item mobile-modal__subnav--2">
+          <a href="#">Service <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="mobile-modal__subnav">
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Service</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Service Details</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-modal__nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="mobile-modal__nav-item mobile-modal__subnav--4">
+          <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="mobile-modal__subnav">
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Blog List</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Blog Details</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Service</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Service Details</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Portfolio Details</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">404</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-modal__nav-item">
+          <a href="#">Blocks <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="mobile-modal__subnav mobile-modal__subnav--5">
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Team</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Service</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Video Popup</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Progressbar</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Gallery</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Counters</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Blog List</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Clint Logo</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Contact Form</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Google Map</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Columns</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Pricing Table</a>
+            </li>
+            <li class="mobile-modal__subnav-item">
+              <a href="#">Button</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-modal__nav-item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Carousel Section data-ride="carousel" -->
     <section id="demo" class="carousel slide">
@@ -447,13 +592,15 @@
     <section class="projects section-padding">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="section-headings text-center">
-            <h3 class="subheading">Our complete project</h3>
-            <h2 class="secondary-heading">Our Project</h2>
-            <p class="text-heading">
+          <div class="col-12">
+            <div class="section-headings text-center">
+              <h3 class="subheading">Our complete project</h3>
+              <h2 class="secondary-heading">Our Project</h2>
+              <p class="text-heading">
               There are many variations of passages of Lorem Ipsum available,
-              <br />but the majority have suffered alteration.
-            </p>
+                <br />but the majority have suffered alteration.
+              </p>
+            </div>
           </div>
         </div>
 
