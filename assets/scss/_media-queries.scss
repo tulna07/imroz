@@ -158,8 +158,8 @@
     $this: &;
 
     .tab-pane &__description {
-      font-size: 1.8rem;
-      line-height: 4.4rem;
+      font-size: 1.8rem !important;
+      line-height: 3.4rem !important;
     }
   }
 

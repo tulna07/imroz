@@ -1216,8 +1216,8 @@ p {
 
 @media (max-width: 576px) {
   .tab-pane .testimonials__description {
-    font-size: 1.8rem;
-    line-height: 4.4rem;
+    font-size: 1.8rem !important;
+    line-height: 3.4rem !important;
   }
   .footer-header {
     gap: 5rem;
