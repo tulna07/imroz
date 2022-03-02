@@ -18,6 +18,7 @@
   }
 }
 
+// from 992px to 1199px;
 @media (min-width: 992px) and (max-width: 1199px) {
   .testimonials {
     $this: &;
@@ -70,7 +71,8 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+// from 768px to 991px;
+@media (min-width: 768px) and (max-width: 991px) {
   .testimonials {
     $this: &;
 
@@ -104,9 +106,6 @@
 
     .tab-pane {
       &::before {
-        // width: 15rem;
-        // height: 50%;
-
         left: 50%;
         transform: translateX(-50%);
       }
@@ -155,6 +154,15 @@
 
 // 576px
 @media (max-width: $bp-sm) {
+  .testimonials {
+    $this: &;
+
+    .tab-pane &__description {
+      font-size: 1.8rem;
+      line-height: 4.4rem;
+    }
+  }
+
   .footer {
     &-header {
       gap: 5rem;
