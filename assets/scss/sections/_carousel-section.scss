@@ -80,13 +80,6 @@
   &-caption {
     top: 52%;
     transform: translateY(-50%);
-
-    // Fix wtf bug
-    // anchor element self
-    // generated ? :D
-    + a {
-      display: none;
-    }
   }
 
   &-indicators {
@@ -103,13 +96,6 @@
         border: 0.2rem solid $primary-color;
       }
     }
-  }
-
-  // Fix wtf bug
-  // anchor element self
-  // generated ? :D
-  &-inner + a {
-    display: none;
   }
 
   button {
