@@ -491,10 +491,6 @@ p {
           transform: translateY(-50%);
 }
 
-.carousel-caption + a {
-  display: none;
-}
-
 .carousel-indicators {
   gap: 1.5rem;
   bottom: 5rem;
@@ -510,10 +506,6 @@ p {
 .carousel-indicators li.active {
   background-color: transparent;
   border: 0.2rem solid #fd4766;
-}
-
-.carousel-inner + a {
-  display: none;
 }
 
 .carousel button {
@@ -1051,29 +1043,25 @@ p {
   * ============================
   */
 .clients {
-  background-color: #f9f9f9;
   overflow: hidden;
+  background-color: #f9f9f9;
 }
 
-.clients .text-heading {
-  font-weight: 400;
-  color: #1d1d24bf;
-}
-
-.clients .row {
+.clients-list {
   padding: 0 1.5rem;
 }
 
-.clients .col-4 {
-  padding: 0;
+.clients-list .clients-item {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .clients__link {
-  height: 21.4rem;
-  border: 0.1rem solid #0000000d;
   position: relative;
+  height: 21.4rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border: 0.1rem solid #0000000d;
 }
 
 .clients__link .clients__img {
@@ -1083,12 +1071,12 @@ p {
 }
 
 .clients__link:hover {
-  background-color: #fd4766;
-  border-radius: 0.6rem;
-  border: 0.1rem solid #fd4766;
   z-index: 1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border: 0.1rem solid #fd4766;
+  border-radius: 0.6rem;
+  background-color: #fd4766;
 }
 
 .clients__link:hover .clients__img {
