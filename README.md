@@ -13,7 +13,7 @@ A webpage layout built with HTML5, CSS3, Bootstrap 4 and Sass.
 > Feb 24 - Mar 2, 2022
 
 - [x] Homepage layout with responsive web design on different devices (desktop, laptop, mobile, ...)
-- [x] Full effects
+- [x] Full dynamic and interactive effects
 
 ### Phase 2: Refactor
 
