@@ -1,4 +1,4 @@
-# Imroz Homepage Layout.
+# Imroz Homepage Layout
 
 See the live page [Imroz](https://scoobytux-imroz.vercel.app "Imroz") 👓
 
