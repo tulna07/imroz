@@ -39,7 +39,7 @@ $PROJECT_ROOT
 └── index.html
 ```
 
-### Installation and Run
+## Installation and Run
 
 Check out the webpage -> [Imroz](https://scoobytux-imroz.vercel.app "Imroz") or run locally:
 
